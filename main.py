@@ -12,8 +12,6 @@ root = Tk()
 root.title("AK's Weather App")
 root.geometry("900x500+300+200")
 root.resizable(False,False)
-
-
 def getWeather():
     try:
         city = textfield.get()
@@ -50,8 +48,6 @@ def getWeather():
     except Exception as e:
         messagebox.showerror("Weather App","Invalid Entry")
 
-
-
 #search box
 Search_image=PhotoImage(file = "/Users/akshat/Desktop/icons/Copy of search.png")
 myimage = Label(image=Search_image)
@@ -83,9 +79,6 @@ name.place(x=30,y=100)
 clock = Label(root,font=("Helvetica",20))
 clock.place(x=30,y=130)
 
-
-
-
 #label
 
 label1 = Label(root,text="WIND",font=("Helvetica",15,'bold'),fg ="white",bg ="#1ab5ef" )
@@ -116,10 +109,5 @@ d.place(x=450,y=430)
 
 p=Label(text="...",font=("arial",20,"bold"),bg="#1ab5ef")
 p.place(x=670,y=430)
-
-
-
-
-
 
 root.mainloop()
