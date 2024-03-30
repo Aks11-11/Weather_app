@@ -8,7 +8,6 @@ import requests
 import pytz
 
 root = Tk()
-
 root.title("AK's Weather App")
 root.geometry("900x500+300+200")
 root.resizable(False,False)
